@@ -1,0 +1,49 @@
+body{
+    background: url("../images/bg-home.jpg") center center no-repeat;
+    -webkit-background-size:cover;
+    background-size:cover;
+}
+#nav{
+    width: 900px;
+    margin:0 auto;
+    background: #ffffff;
+    overflow: hidden;
+}
+#nav ul{
+    margin:0 5px;
+}
+#nav li{
+    position: relative;
+    list-style: none;
+    display: inline-block;
+
+}
+#left_nav{
+    padding:0;
+    float: left;
+}
+#right_nav{
+    padding:0;
+    float: right;
+}
+#nav li img{
+    width:50px;
+    margin: 10px 5px;
+
+}
+#nav .border{
+    position: absolute;
+    bottom:0;
+    width:100%;
+    height: 8px;
+    background: #ef941b;
+    display: none;
+}
+#left_banner{
+    position: fixed;
+    left:0;
+    top:80px;
+}
+#left_banner img{
+    width:150px;
+}
