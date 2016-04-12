@@ -4,16 +4,17 @@
 var Index = {};
 
 $(function () {
-    $("#index .border").show();
     Index.bindEvent();
 });
 
 Index.bindEvent = function(){
 
+<<<<<<< HEAD
+=======
     /*nav animate*/
     $("#nav li").hover(function(){
-        $("#nav li .border").hide();
-        $(this).find(".border").show().animate({bottom:"0px"},300);
+        $(this).find(".border").slideUp().show();
     });
 
+>>>>>>> origin/master
 };
