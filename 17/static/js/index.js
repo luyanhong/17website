@@ -12,7 +12,8 @@ Index.bindEvent = function(){
 
     /*nav animate*/
     $("#nav li").hover(function(){
-        $(this).find(".border").slideUp().show();
+        $("#nav li .border").hide();
+        $(this).find(".border").show().animate({bottom:"0px"},300);
     });
 
 };
