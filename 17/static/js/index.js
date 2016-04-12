@@ -4,15 +4,9 @@
 var Index = {};
 
 $(function () {
-    $("#index .border").show();
     Index.bindEvent();
 });
 
 Index.bindEvent = function(){
-
-    /*nav animate*/
-    $("#nav li").hover(function(){
-        $(this).find(".border").slideUp().show();
-    });
 
 };
