@@ -5,6 +5,10 @@ body{
     padding:0;
     margin:0;
 }
+a{
+    text-decoration: none;
+    color: #000;
+}
 #left_banner{
     position: fixed;
     left:0;
@@ -27,7 +31,39 @@ body{
 }
 .i_title{
     margin-top:10px;
+    font-size: 18px;
+
+}
+.i_title a{
+    position: relative;
+    top: -6px;
+
 }
 .i_title img{
     width:100px;
+}
+.i_content{
+    margin-top:10px;
+    overflow: hidden;
+
+}
+.i_content_date{
+    float: left;
+    width:20%;
+    height:60px;
+    border-right:gray solid 1px;
+
+}
+.i_content_body{
+    float: right;
+    width:79%;
+    font-size: 18px;
+    line-height:29px;
+}
+footer{
+    background: #feffff;
+    position: absolute;
+    bottom:0;
+    height:30px;
+    width:100%;
 }
