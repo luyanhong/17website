@@ -18,7 +18,6 @@ body{
     position: relative;
     list-style: none;
     display: inline-block;
-    cursor: pointer;
 
 }
 #left_nav{
@@ -36,12 +35,11 @@ body{
 }
 #nav .border{
     position: absolute;
-    bottom:-6px;
+    bottom:0;
     width:100%;
     height: 6px;
     background: #ef941b;
-
-
+    display: none;
 }
 #left_banner{
     position: fixed;
@@ -50,23 +48,4 @@ body{
 }
 #left_banner img{
     width:150px;
-}
-
-.i_body {
-    width: 700px;
-    margin: 100px auto;
-    overflow: hidden;
-}
-.i_left{
-    width:60%;
-    float: left;
-}
-#i_video{
-    background: rgba(1,1,1,.3);
-}
-.i_title{
-    margin-top:10px;
-}
-.i_title img{
-    width:100px;
 }
