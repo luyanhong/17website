@@ -9,12 +9,4 @@ $(function () {
 
 Index.bindEvent = function(){
 
-<<<<<<< HEAD
-=======
-    /*nav animate*/
-    $("#nav li").hover(function(){
-        $(this).find(".border").slideUp().show();
-    });
-
->>>>>>> origin/master
 };
