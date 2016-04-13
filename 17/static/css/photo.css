@@ -1,0 +1,36 @@
+body{
+    background: url("../images/photo/bg-photo.jpg") center center no-repeat;
+}
+
+.p_body {
+    width: 800px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+.p_left_block{
+    width:50%;
+    float: left;
+}
+.p_right_block{
+    width:50%;
+    float: right;
+    margin-bottom:20px;
+}
+.p_left_block a{
+    width:50%;
+    float: left;
+}
+.p_left_block a img{
+    width:100%;
+}
+.p_right_block a{
+    width:50%;
+    float: left;
+}
+.p_right_block a img{
+    width:100%;
+}
+.p_body_bar>img{
+    float: left;
+    width:40%;
+}
