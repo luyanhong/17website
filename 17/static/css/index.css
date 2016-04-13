@@ -47,16 +47,9 @@ a{
     overflow: hidden;
 
 }
-.i_content_date{
-    float: left;
-    width:20%;
-    height:60px;
-    color: #403832;
-    font-size: 15px;
-}
-.i_content_body{
-    float: right;
-    width:79%;
+.i_content_data{
+    margin-left: 1em;
     font-size: 15px;
     color: #403832;
+    margin-bottom: 10px;
 }
