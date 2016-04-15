@@ -34,3 +34,58 @@ body{
     float: left;
     width:40%;
 }
+.i_body{
+    width:70%;
+    margin:20px auto;
+}
+.i_title{
+    padding-bottom:6px;
+    border-bottom:white solid 1px;
+}
+#photo_body{
+    margin-top:20px;
+    height:80%;
+    overflow: hidden;
+}
+.photo_big{
+    width:22.6%;
+    padding:10px;
+    float: left;
+}
+.photo_block{
+    text-align: center;
+    position: relative;
+    width:100%;
+    height: 240px;
+    background: rgba(255,255,255,.3);
+}
+.photo_block img{
+    vertical-align: middle;
+    max-height:80%;
+    margin: auto;
+    max-width:100%;
+}
+.photo_block p{
+    padding:17px 0;
+    margin: 0;
+    background: #ffffff;
+    position: absolute;
+    bottom:0;
+    width:100%;
+}
+.author{
+    font-size: 12px;
+}
+.pig_btn{
+    background: rgba(255,255,255,.3);
+    -webkit-border-radius:0;
+    -moz-border-radius:0;
+    border-radius:0;
+    border:0;
+    padding:5px 10px;
+    margin:4px;
+    cursor: pointer;
+}
+.pig{
+    overflow: hidden;
+}
