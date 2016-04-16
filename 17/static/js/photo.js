@@ -3,8 +3,14 @@
  */
 Photo = {};
 
+function UrlGetData(name) {
+    var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)","i");
+    var r = window.location.search.substr(1).match(reg);
+    if (r!=null) return (r[2]); return null;
+}
+
 $(function(){
-    Photo.getPhoto(1,29);
+    Photo.getPhoto(1,UrlGetData('type'));
     Photo.bindEvent();
 });
 
@@ -20,7 +26,7 @@ Photo.getPhoto = function(_pageNo,_type){
     };
     //ajax请求
     JAC.ajax.get(opt,getList);
-
+    JAC.url
     function getList (json){
 
         console.log(json);
@@ -62,7 +68,7 @@ Photo.bindEvent = function(){
             return;
         }
         Photo.pageNo--;
-        Photo.getPhoto(Photo.pageNo,29);
+        Photo.getPhoto(Photo.pageNo,UrlGetData('type'));
     });
     $(".next").on("click",function(){
         if(Photo.count < 12){
@@ -70,6 +76,6 @@ Photo.bindEvent = function(){
             return;
         }
         Photo.pageNo++;
-        Photo.getPhoto(Photo.pageNo,29);
+        Photo.getPhoto(Photo.pageNo,UrlGetData('type'));
     });
 };
