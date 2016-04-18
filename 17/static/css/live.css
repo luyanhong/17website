@@ -1,0 +1,31 @@
+body{
+    background: url("../images/live/bg-live.jpg") center center no-repeat;
+    padding: 0;
+    margin: 0;
+}
+
+.l_body {
+    width: 1000px;
+    margin: 20px auto;
+}
+
+.l_video {
+    width: 100%;
+    text-align: center;
+}
+
+.l_menu {
+    width: 100%;
+    text-align: center;
+}
+
+.l_menu_btns {
+    background-color: #5c81d5;
+    font-size: 18px;
+    color: #fff;
+    border: none;
+    margin: 20px 20px;
+    padding:5px 24px;
+    border-radius: 12px;
+    cursor: pointer;
+}
