@@ -9,6 +9,15 @@ body{
     margin: 20px auto;
     overflow: hidden;
 }
+
+@media screen and (max-width: 1400px) {
+    .l_body {
+        width: 800px;
+        margin: 60px auto;
+        overflow: hidden;
+    }
+}
+
 .p_left_block{
     width:50%;
     float: left;
