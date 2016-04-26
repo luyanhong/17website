@@ -1,0 +1,54 @@
+body{
+    background: url("../images/novel/bg-cp.jpg") no-repeat center center;
+}
+.n_body{
+    width:70%;
+    margin:0 auto;
+}
+.n_body_left{
+    width:70%;
+    float: left;
+}
+.n_title{
+    overflow: hidden;
+}
+.n_title ul li{
+    list-style: none;
+    float: left;
+    background: rgba(1,1,1,.3);
+    padding:5px 8px;
+    margin:0 5px;
+    border-radius: 5px;
+    color: #ffffff;
+}
+.n_left{
+    float: left;
+    width:10%;
+    text-align: center;
+    padding:8px 0;
+    background: coral;
+    font-size:33px;
+}
+.n_content{
+    clear: both;
+    margin-top: 20px;
+}
+.n_content ul li{
+    overflow: hidden;
+    list-style: none;
+}
+.n_right{
+    float: right;
+    width:87%;
+}
+.n_right_top{
+    padding:10px;
+    font-size: 20px;
+}
+.n_right_btm{
+    padding:10px;
+    background: rgba(255,255,255,.6);
+    height: 55px;
+    overflow: hidden;
+    color: gray;
+}
