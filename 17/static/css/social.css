@@ -1,0 +1,72 @@
+body{
+    background: url("../images/social/bg-sns.jpg") center  center no-repeat;
+    -webkit-background-size:cover;
+    background-size:cover;
+}
+.s_body{
+    width:80%;
+    margin:40px auto;
+    overflow: hidden;
+}
+.s_left{
+    float: left;
+    width:50%;
+    overflow: hidden;
+}
+.s_right{
+    float: right;
+    width:50%;
+    overflow: hidden;
+}
+.left_head{
+    float: left;
+}
+.right_head{
+    float: right;
+}
+.l_content{
+    float: right;
+    position: relative;
+    right: 10px;
+}
+.r_content{
+    float: left;
+    position: relative;
+    left:10px;
+}
+.l_content, .r_content{
+    overflow-y: scroll;
+    position: relative;
+    height:530px;
+    width:73%;
+    border:gray solid 1px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+    box-shadow: lightgray 0px 0px 4px;
+    background: #ffffff;
+    padding:10px;
+}
+.icon_left{
+    position: absolute;
+    left:-17px;
+}
+.icon_right{
+    float: right;
+    position: absolute;
+    right:-17px;
+}
+.content_block{
+    border-bottom:lightgray solid 1px;
+    padding-bottom:10px;
+    padding-top:10px;
+}
+.page_img img{
+    width:50%;
+}
+.page{
+    margin:10px 0;
+}
+.page_img{
+    margin:10px 0;
+}
