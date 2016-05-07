@@ -3,10 +3,23 @@
  */
 $(function () {
     Social.getList(1,1);
+    Social.getList(1,2);
+    Social.pageNoWeibo = 1;
+    Social.pageNoIns = 1;
+    Social.bindEvent();
+    var h = $(window).height() - 150;
+    $(".l_content,.r_content").css("height",h+"px")
 });
 
 var Social = {};
-
+Social.bindEvent = function(){
+    $("#weibo_more").on("click",function(){
+        Social.getList(Social.pageNoWeibo,2);
+    });
+    $("#ins_more").on("click",function(){
+        Social.getList(Social.pageNoIns,1);
+    });
+};
 Social.getList = function(_pageNo,_type){
     //组装数据
     var opt = {
@@ -17,6 +30,7 @@ Social.getList = function(_pageNo,_type){
         },
         isToken:false,
     };
+
     //ajax请求
     JAC.ajax.get(opt,getList);
     //JAC.url
@@ -25,6 +39,7 @@ Social.getList = function(_pageNo,_type){
         console.log(json);
         if(json != null){
             Social.show(json);
+
         }
     };
 };
@@ -33,9 +48,9 @@ Social.show = function(json){
     var row_str = '<div class="content_block">'+
         '<div class="content_head">'+
         '<span class="s_type">{{0}}</span>&nbsp;&nbsp;|&nbsp;&nbsp;'+
-        '<span class="s_date">{{1}}</span>'+
+        '<span class="s_date" style="color: gray;">{{1}}</span>'+
         '</div>'+
-        '<div class="page">{{2}}</div>'+
+        '<div class="page" style="color: gray;">{{2}}</div>'+
         '<div class="page_img">{{3}}</div>'+
         '</div>';
 
@@ -55,5 +70,13 @@ Social.show = function(json){
 
         row += row_str.format([type,date,content,img_big]);
     }
-    $(".content_body").html(row);
+    if(type == "微博"){
+        $("#weibo").append(row);
+        Social.pageNoWeibo++;
+    }
+    else{
+        $("#ins").append(row);
+        Social.pageNoIns++;
+    }
+
 };
