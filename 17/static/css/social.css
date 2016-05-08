@@ -12,11 +12,13 @@ body{
     float: left;
     width:50%;
     overflow: hidden;
+    position: relative;
 }
 .s_right{
     float: right;
     width:50%;
     overflow: hidden;
+    position: relative;
 }
 .left_head{
     float: left;
@@ -49,12 +51,14 @@ body{
 }
 .icon_left{
     position: absolute;
-    left:-17px;
+    left:83px;
+    z-index: 99;
 }
 .icon_right{
     float: right;
     position: absolute;
-    right:-17px;
+    right:83px;
+    z-index: 99;
 }
 .content_block{
     border-bottom:lightgray solid 1px;
@@ -62,11 +66,23 @@ body{
     padding-top:10px;
 }
 .page_img img{
-    width:50%;
+    width:43%;
+    margin:10px;
 }
 .page{
     margin:10px 0;
 }
 .page_img{
     margin:10px 0;
+}
+.bottom_btn{
+    text-align:center;
+}
+.bottom_btn button{
+    background: lightgray;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    padding: 5px 10px;
 }
